@@ -33,11 +33,9 @@ def test_with_add_links_method_failed():
 
 def test_with_add_attachments_method_success():
     testit.addAttachments("Content", True, "file01.txt")
-    testit.addAttachments("resources/docs/document.docx")
-    testit.addAttachments("resources/docs/document.doc")
-    testit.addAttachments("resources/pictures/png.png")
+    testit.addAttachments("resources/attachments/file02.txt")
 
-    attachment_paths = ["resources/pictures/jpg.jpg", "resources/pictures/svgz.jpg", "resources/docs/logs.log"]
+    attachment_paths = ["resources/attachments/file03.txt", "resources/attachments/file04.txt"]
     testit.addAttachments(attachment_paths)
 
     assert True
@@ -45,11 +43,9 @@ def test_with_add_attachments_method_success():
 
 def test_with_add_attachments_method_failed():
     testit.addAttachments("Content", True, "file01.txt")
-    testit.addAttachments("resources/docs/document.docx")
-    testit.addAttachments("resources/docs/document.doc")
-    testit.addAttachments("resources/pictures/png.png")
+    testit.addAttachments("resources/attachments/file02.txt")
 
-    attachment_paths = ["resources/pictures/jpg.jpg", "resources/pictures/svgz.jpg", "resources/docs/logs.log"]
+    attachment_paths = ["resources/attachments/file03.txt", "resources/attachments/file04.txt"]
     testit.addAttachments(attachment_paths)
 
     assert False
@@ -80,11 +76,9 @@ def test_with_all_methods_success():
         type=testit.LinkType.ISSUE)
 
     testit.addAttachments("Content", True, "file01.txt")
-    testit.addAttachments("resources/docs/document.docx")
-    testit.addAttachments("resources/docs/document.doc")
-    testit.addAttachments("resources/pictures/png.png")
+    testit.addAttachments("resources/attachments/file02.txt")
 
-    attachment_paths = ["resources/pictures/jpg.jpg", "resources/pictures/svgz.jpg", "resources/docs/logs.log"]
+    attachment_paths = ["resources/attachments/file03.txt", "resources/attachments/file04.txt"]
     testit.addAttachments(attachment_paths)
 
     testit.addMessage("Message")
@@ -105,11 +99,9 @@ def test_with_all_methods_failed():
         type=testit.LinkType.ISSUE)
 
     testit.addAttachments("Content", True, "file01.txt")
-    testit.addAttachments("resources/docs/document.docx")
-    testit.addAttachments("resources/docs/document.doc")
-    testit.addAttachments("resources/pictures/png.png")
+    testit.addAttachments("resources/attachments/file02.txt")
 
-    attachment_paths = ["resources/pictures/jpg.jpg", "resources/pictures/svgz.jpg", "resources/docs/logs.log"]
+    attachment_paths = ["resources/attachments/file03.txt", "resources/attachments/file04.txt"]
     testit.addAttachments(attachment_paths)
 
     testit.addMessage("Message")

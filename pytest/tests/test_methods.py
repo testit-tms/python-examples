@@ -106,4 +106,4 @@ def test_with_all_methods_failed():
 
     testit.addMessage("Message")
 
-    assert True
+    assert False

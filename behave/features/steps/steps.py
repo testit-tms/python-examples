@@ -41,9 +41,9 @@ def add_links(context):
 def add_attachments(context):
     with testit.step('Attachments'):
         testit.addAttachments("Content", True, "file01.txt")
-        testit.addAttachments("resources/attachments/file02.txt")
+        testit.addAttachments("../resources/attachments/file02.txt")
 
-        attachment_paths = ["resources/attachments/file03.txt", "resources/attachments/file04.txt"]
+        attachment_paths = ["../resources/attachments/file03.txt", "../resources/attachments/file04.txt"]
         testit.addAttachments(attachment_paths)
 
 
@@ -67,9 +67,9 @@ def add_all_methods(context):
 
     with testit.step('Attachments'):
         testit.addAttachments("Content", True, "file01.txt")
-        testit.addAttachments("resources/attachments/file02.txt")
+        testit.addAttachments("../resources/attachments/file02.txt")
 
-        attachment_paths = ["resources/attachments/file03.txt", "resources/attachments/file04.txt"]
+        attachment_paths = ["../resources/attachments/file03.txt", "../resources/attachments/file04.txt"]
         testit.addAttachments(attachment_paths)
 
     testit.addMessage("Message")

@@ -1,0 +1,2 @@
+nose2
+testit-adapter-nose>=2.1.8

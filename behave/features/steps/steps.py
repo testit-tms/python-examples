@@ -18,9 +18,14 @@ def get_parameters(context, number: int, value: str):
     pass
 
 
-@when("step01")
+@when("step passed")
 def step01(context):
     pass
+
+
+@when("step failed")
+def step01(context):
+    raise Exception
 
 
 @when("add links")

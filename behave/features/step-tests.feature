@@ -1,10 +1,8 @@
 Feature: step tests
 
   Scenario: Steps success
-    When step01
-    Then return true
+    When step passed
 
 
   Scenario: Steps failed
-    When step01
-    Then return false
+    When step failed

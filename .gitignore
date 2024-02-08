@@ -57,3 +57,10 @@ pip-wheel-metadata/
 
 # pytest debug logs generated via --debug
 pytestdebug.log
+
+# Visual Studio
+.vs/
+
+# robotFramework reports
+robotFramework/*.html
+robotFramework/*.xml

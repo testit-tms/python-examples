@@ -76,7 +76,7 @@ def test_with_links_decorator_failed():
     assert False
 
 
-@testit.workItemIds("123", 321)
+@testit.workItemIds("30493", 30494)
 def test_with_work_item_ids_decorator_success():
     assert True
 
@@ -91,7 +91,7 @@ def test_with_work_item_ids_decorator_failed():
 @testit.title("with_all_decorators_success Title")
 @testit.description("with_all_decorators_success")
 @testit.labels("Label1", "Label2")
-@testit.workItemIds("123", 321)
+@testit.workItemIds("30493", 30494)
 @testit.links(links=[
     {'url': 'https://test01.example', 'type': testit.LinkType.ISSUE, 'title': 'Example01', 'description': 'Example01 description'},
     {'url': 'https://test02.example', 'type': testit.LinkType.ISSUE, 'title': 'Example02', 'description': 'Example02 description'}
@@ -105,7 +105,7 @@ def test_with_all_decorators_success():
 @testit.title("with_all_decorators_failed Title")
 @testit.description("with_all_decorators_failed")
 @testit.labels("Label1", "Label2")
-@testit.workItemIds("123", 321)
+@testit.workItemIds("123", 30494)
 @testit.links(links=[
     {'url': 'https://test01.example', 'type': testit.LinkType.ISSUE, 'title': 'Example01', 'description': 'Example01 description'},
     {'url': 'https://test02.example', 'type': testit.LinkType.ISSUE, 'title': 'Example02', 'description': 'Example02 description'}

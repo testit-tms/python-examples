@@ -70,7 +70,7 @@ Feature: annotation tests
     Then return false
 
 
-  @WorkItemIds=123,321
+  @WorkItemIds=30578,30579
   Scenario: With workitemids annotation success
     Then return true
 
@@ -87,7 +87,7 @@ Feature: annotation tests
   @Labels=Label1,Label2
   @Links={"url":"https://test01.example","title":"Example01","description":"Example01_description","type":"Issue"}
   @Links={"url":"https://test02.example","title":"Example02","description":"Example02_description","type":"Issue"}
-  @WorkItemIds=123,321
+  @WorkItemIds=30578,30579
   Scenario: With all annotations success
     Then return true
 
@@ -99,7 +99,7 @@ Feature: annotation tests
   @Labels=Label1,Label2
   @Links={"url":"https://test01.example","title":"Example01","description":"Example01_description","type":"Issue"}
   @Links={"url":"https://test02.example","title":"Example02","description":"Example02_description","type":"Issue"}
-  @WorkItemIds=123,321
+  @WorkItemIds=123,30579
   Scenario: With all annotations failed
     Then return false
 

@@ -120,7 +120,8 @@ def test_with_all_decorators_failed():
 @pytest.mark.parametrize('number, text', [
     (1, "string1"),
     (2, "string2"),
-    (3, "string3")
+    (3, "string3"),
+    pytest.param(4, "string4", marks=pytest.mark.skip(reason="bug test"))
 ])
 def test_with_parameters_success(number: int, text: str):
     assert True
@@ -132,7 +133,8 @@ def test_with_parameters_success(number: int, text: str):
 @pytest.mark.parametrize('number, text', [
     (1, "string1"),
     (2, "string2"),
-    (3, "string3")
+    (3, "string3"),
+    pytest.param(4, "string4", marks=pytest.mark.skip(reason="bug test"))
 ])
 def test_with_parameters_failed(number: int, text: str):
     assert False

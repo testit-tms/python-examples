@@ -1,2 +1,2 @@
 behave>=1.2.6
-testit-adapter-behave>=2.1.8
+testit-adapter-behave>=2.8.1

@@ -1,2 +1,2 @@
 robotframework>=6.0.0
-testit-adapter-robotframework>=2.1.8
+testit-adapter-robotframework>=2.8.1

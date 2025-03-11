@@ -70,7 +70,7 @@ Feature: annotation tests
     Then return false
 
 
-  @WorkItemIds=30578,30579
+  @WorkItemIds=514,515
   Scenario: With workitemids annotation success
     Then return true
 
@@ -87,7 +87,7 @@ Feature: annotation tests
   @Labels=Label1,Label2
   @Links={"url":"https://test01.example","title":"Example01","description":"Example01_description","type":"Issue"}
   @Links={"url":"https://test02.example","title":"Example02","description":"Example02_description","type":"Issue"}
-  @WorkItemIds=30578,30579
+  @WorkItemIds=514,515
   Scenario: With all annotations success
     Then return true
 
@@ -99,15 +99,15 @@ Feature: annotation tests
   @Labels=Label1,Label2
   @Links={"url":"https://test01.example","title":"Example01","description":"Example01_description","type":"Issue"}
   @Links={"url":"https://test02.example","title":"Example02","description":"Example02_description","type":"Issue"}
-  @WorkItemIds=123,30579
+  @WorkItemIds=123,321
   Scenario: With all annotations failed
     Then return false
 
 
-  @ExternalId=parametrized_test_{number}_{value}_success
-  @DisplayName=parametrized_test_{number}_{value}_success_display_name
-  @Title=parametrized_test_{number}_{value}_success_title
-  @Description=parametrized_test_{number}_{value}_success
+  @ExternalId=parametrized_test_<number>_<value>_success
+  @DisplayName=parametrized_test_<number>_<value>_success_display_name
+  @Title=parametrized_test_<number>_<value>_success_title
+  @Description=parametrized_test_<number>_<value>_success
   Scenario Outline: Parametrized test success
     When get parameters <number> <value>
     Then return true
@@ -119,10 +119,10 @@ Feature: annotation tests
       | 3      | string03 |
 
 
-  @ExternalId=parametrized_test_{number}_{value}_failed
-  @DisplayName=parametrized_test_{number}_{value}_failed_display_name
-  @Title=parametrized_test_{number}_{value}_failed_title
-  @Description=parametrized_test_{number}_{value}_failed
+  @ExternalId=parametrized_test_<number>_<value>_failed
+  @DisplayName=parametrized_test_<number>_<value>_failed_display_name
+  @Title=parametrized_test_<number>_<value>_failed_title
+  @Description=parametrized_test_<number>_<value>_failed
   Scenario Outline: Parametrized test failed
     When get parameters <number> <value>
     Then return false

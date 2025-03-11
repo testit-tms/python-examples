@@ -65,7 +65,7 @@ With links annotation failed
     Return False
 
 With workitemids annotation success
-    [Tags]  testit.workitemsID:${{[30542, '30543']}}
+    [Tags]  testit.workitemsID:${{[478, '479']}}
     Return True
 
 With workitemids annotation failed
@@ -80,7 +80,7 @@ With all annotations success
     ...     testit.labels:${{['Label1', 'Label2']}}
     ...     testit.links:${{{"url":"https://test01.example","title":"Example01","description":"Example01_description","type":"Issue"}}}
     ...     testit.links:${{{"url":"https://test02.example","title":"Example02","description":"Example02_description","type":"Issue"}}}
-    ...     testit.workitemsID:${{[30542, '30543']}}
+    ...     testit.workitemsID:${{[478, '479']}}
     Return True
 
 With all annotations failed

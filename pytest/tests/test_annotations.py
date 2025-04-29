@@ -86,6 +86,26 @@ def test_with_work_item_ids_decorator_failed():
     assert False
 
 
+@testit.nameSpace("namespace_decorator_success NameSpace")
+def test_with_namespace_decorator_success():
+    assert True
+
+
+@testit.nameSpace("namespace_decorator_failed NameSpace")
+def test_with_namespace_decorator_failed():
+    assert False
+
+
+@testit.className("classname_decorator_success ClassName")
+def test_with_classname_decorator_success():
+    assert True
+
+
+@testit.className("classname_decorator_failed ClassName")
+def test_with_classname_decorator_failed():
+    assert False
+
+
 @testit.externalId("with_all_decorators_success")
 @testit.displayName("with_all_decorators_success DisplayName")
 @testit.title("with_all_decorators_success Title")
@@ -96,6 +116,8 @@ def test_with_work_item_ids_decorator_failed():
     {'url': 'https://test01.example', 'type': testit.LinkType.ISSUE, 'title': 'Example01', 'description': 'Example01 description'},
     {'url': 'https://test02.example', 'type': testit.LinkType.ISSUE, 'title': 'Example02', 'description': 'Example02 description'}
 ])
+@testit.nameSpace("with_all_decorators_success NameSpace")
+@testit.className("with_all_decorators_success ClassName")
 def test_with_all_decorators_success():
     assert True
 
@@ -110,6 +132,8 @@ def test_with_all_decorators_success():
     {'url': 'https://test01.example', 'type': testit.LinkType.ISSUE, 'title': 'Example01', 'description': 'Example01 description'},
     {'url': 'https://test02.example', 'type': testit.LinkType.ISSUE, 'title': 'Example02', 'description': 'Example02 description'}
 ])
+@testit.nameSpace("with_all_decorators_failed NameSpace")
+@testit.className("with_all_decorators_failed ClassName")
 def test_with_all_decorators_failed():
     assert False
 

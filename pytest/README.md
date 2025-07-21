@@ -4,7 +4,7 @@ Example of tests with Pytest framework and adapter for Test IT
 ## Setup
 
 1. Install [python version 3.6+](https://www.python.org/downloads/)
-2. Clone this repository `git clone https://github.com/testit-tms/python-examples.git && cd pytest`
+2. Clone this repository `git clone https://github.com/testit-tms/python-examples.git && cd /python-examples/pytest`
 3. Install dependencies `pip install -r requirements.txt`
 4. Run tests via `pytest`
 5. Configure the tests to run in **connection_config.ini** file. [How to configure?](https://github.com/testit-tms/adapters-python/tree/main/testit-adapter-pytest#configuration)
